@@ -66,3 +66,89 @@ body{
 .dropdown:hover .dropdown-content {
     display: block;
     }
+ /* Huba cucca ne nyúlj hozzá*/
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .image-container:hover .text-overlay {
+    opacity: 1;
+  }
+  
+  .image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  .kep{
+    margin: 10px;
+    border-color: black;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  footer h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    width: 33.33%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .felirat {
+    text-align: center;
+  }
