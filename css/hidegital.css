@@ -1,0 +1,20 @@
+.viz {
+    background-color: white;
+    width: 260px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 30px;
+    margin: 20px;
+    justify-content: center; 
+    align-items: center; 
+   
+
+  }
+  button{
+    background-color: yellow;
+    text-align: center;
+  }
+  #jobbra{
+    text-align: right;
+  }
+  
