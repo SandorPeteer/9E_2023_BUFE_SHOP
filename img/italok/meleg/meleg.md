@@ -1,2 +1,0 @@
-
-meleg italok
