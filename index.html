@@ -16,7 +16,7 @@
 
 <body>
     <!-- Bootstrapre alakított navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3"> <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-2"> <!-- NAVBAR -->
         <!-- A bg-dark az a background(háttér) színét változtatja sötétté -->
         <!-- A következő Button felel a rezponzivitásért! (ha kisseb a felbontás meg jelenik egy navbar toggle (kapcsoló))-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -35,6 +35,15 @@
                 <a class="nav-item nav-link text-white" href="#">Nasik</a> <!-- Link navbarban -->
                 <a class="nav-item nav-link text-white" href="#">Italok</a> <!-- Link navbarban -->
                 <a class="nav-item nav-link text-white" href="#">Ételek</a> <!-- Link navbarban -->
+                <a class="nav-item nav-link text-white" href="#">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Kosár 
+                        <!-- Kosárban lévő tárgyak mennyiség jelzője -->
+                        <span class="badge badge-primary badge-pill bg-danger" id="szamlaloblock" style="transform: scale(0);"> 
+                                <output id="szamlalo"></output>
+                        </span> 
+                    </li>
+                </a> <!-- Link navbarban -->
             </div>
         </div>
     </nav>
@@ -42,6 +51,7 @@
 
 
     <!-- a fw-bolder adja a vastagságát a betünek, border-bottom az alsó szegélyt, majd a border-dark adja a szegély színét, a p-3 a belső margóját adja a szövegnek-->
+    <hr><hr><hr>
     <h1 class="fw-bolder border-bottom border-dark p-3 text-primary">Ajánlataink:</h1> 
 
     <div class="container">
@@ -182,7 +192,7 @@
             <!--ELSŐ TERMÉK-->
             <div class="col-sm-4">
                 <!-- A data-bs-target-et át kell szerkeszteni és meg kell csinálni a modal-t -->
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#"> 
+                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#szendvics7"> 
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/etel/hideg/sajtosszendvics.jpg"
@@ -202,7 +212,7 @@
 
             <!--MÁSODIK TERMÉK-->
             <div class="col-sm-4">
-                <div class="card mb-3" style=" max-width: 540px;" data-bs-toggle="modal" data-bs-target="#szendvics7">
+                <div class="card mb-3" style=" max-width: 540px;" data-bs-toggle="modal" data-bs-target="#szendvics8">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/etel/hideg/vegaszenya.jpg"
@@ -222,7 +232,7 @@
 
             <!--HARMADIK TERMÉK-->
             <div class="col-sm-4">
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#szendvics8">
+                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#szendvics9">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/etel/hideg/vegaszenya.jpg"
@@ -260,7 +270,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -284,7 +294,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -308,7 +318,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -333,7 +343,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -357,7 +367,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -381,7 +391,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -406,7 +416,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -430,7 +440,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -454,7 +464,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -469,7 +479,7 @@
             <!-- Kis icon felületi elérhetőség ( pl. facebook icon, twitter, insta, Google) -->
             <section class="mb-4">
                 <!-- Facebook elérhetőség -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/kandomiskolc" role="button">
                     <!-- ebben a sorban tudtok linket hozzá adni!-->
                     <i class="bi bi-facebook"> <!-- bi bi-... méretezéshez szükséges-->
                         <!-- Szükséges icon -->
@@ -482,15 +492,13 @@
                 </a>
 
                 <!-- Twitter elérhetőség -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCV_wwFqieO3pwjailCbCdtg" role="button">
                     <!-- ebben a sorban tudtok linket hozzá adni!-->
-                    <i class="bi bi-twitter"> <!-- bi bi-... méretezéshez szükséges-->
+                    <i class="bi bi-youtube"> <!-- bi bi-... méretezéshez szükséges-->
                         <!-- Szükséges icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-twitter" viewBox="0 0 16 16">
-                            <path
-                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                          </svg>
                     </i>
                 </a>
 
@@ -523,6 +531,7 @@
             <!-- Kis icon felületi elérhetőség vége -->
             <section class="mb-4"> <!-- méretezéshez kell a selection -->
                 <p>
+                    Miskolci SZC Kandó Kálmán Informatikai Technikum <br> 3525 Miskolc, Palóczy László utca 3. <br>
                     Kérem ne spammelje elérhetőségeinket! <!-- Szöveg -->
                 </p>
             </section>
@@ -532,20 +541,20 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <!-- Első oszlop -->
-                        <h5 class="text-uppercase">valami</h5>
+                        <h5 class="text-uppercase">Kandó</h5>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://kkszki.hu/rolunk/bemutatkozas" class="text-white">kkszki.hu</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="#!" class="text-white">OM azonosító: 203060/015</a>
                             </li>
-                            <li>
-                                <a href="#!" class="text-white">valami</a>
+                            <li>E-mail:
+                                <a href="#!" class="text-white">kando@kkszki.hu</a>
                             </li>
-                            <li>
-                                <a href="#!" class="text-white">valami</a>
+                            <li>Telefon:
+                                <a href="#!" class="text-white">+36 46 500 930</a>
                             </li>
                         </ul>
                     </div>
@@ -553,20 +562,20 @@
 
                     <!-- Második oszlop -->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">valami</h5>
+                        <h5 class="text-uppercase">Képzéseink</h5>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://kkszki.hu/kepzeseink/technikum-szakkepzo" class="text-white">Technikumi oktatás</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://kkszki.hu/kepzeseink/felnott" class="text-white">Felnőtti szakmai oktatás</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://kkszki.hu/kepzeseink/szakmai-kepzeseink" class="text-white">Szakmai képzések</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://kkszki.hu/kepzeseink/egyeb-kepzesek" class="text-white">Egyéb Képzéseink</a>
                             </li>
                         </ul>
                     </div>
@@ -575,20 +584,20 @@
 
                     <!-- Harmadik oszlop -->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">valami</h5>
+                        <h5 class="text-uppercase">Tanulóinknak</h5>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://kkszki.hu/tanuloinknak/linkgyujtemeny" class="text-white">Hasznos tudnivalók</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://kkszki.hu/tanuloinknak/esemenyek" class="text-white">Események</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://kkszki.hu/tanuloinknak/tanev-rendje" class="text-white">Tanév-rendje</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://kkszki.hu/tanuloinknak/egyeb-foglalkozasok" class="text-white">Egyéb foglalkozás</a>
                             </li>
                         </ul>
                     </div>
@@ -597,20 +606,20 @@
 
                     <!-- Negyedik oszlop -->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">valami</h5>
+                        <h5 class="text-uppercase">Támogatóink</h5>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://www.mavcsoport.hu/" class="text-white">Máv</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://www.telekom.hu/lakossagi/karbantartas" class="text-white">Telekom</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://mikrotik.com/" class="text-white">Mikrotik</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">valami</a>
+                                <a href="https://kormany.hu/kulturalis-es-innovacios-miniszterium" class="text-white">Magyar önkormányzat</a>
                             </li>
                         </ul>
                     </div>
@@ -642,7 +651,18 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <!-- bootstrap invite scriptek vége -->
-
+        <script>
+            //Ez nem localstored, ez csak egy egyszerü css, ami anyit tesz hogy hogy fog kinézni az oldal müködésekor!
+            var kosarblock = document.getElementById("szamlaloblock")
+            var test = 0
+            function kosarba(){
+                test += 1
+                document.getElementById("szamlalo").value = test;
+                if (test > 0){
+                    kosarblock.style.transform = 'scale(1)';
+                }
+            }
+        </script>
 </body>
 
 </html>
