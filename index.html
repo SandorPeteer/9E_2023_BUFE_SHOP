@@ -39,7 +39,7 @@
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         Kosár 
                         <!-- Kosárban lévő tárgyak mennyiség jelzője -->
-                        <span class="badge badge-primary badge-pill bg-danger" id="szamlaloblock" style="transform: scale(0);"> 
+                        <span class="badge badge-primary badge-pill bg-danger" id="szamlaloblock" style="transform: scale(0.5); border-radius: 20px; margin-top: 10px;"> 
                                 <output id="szamlalo"></output>
                         </span> 
                     </li>
@@ -659,7 +659,7 @@
                 test += 1
                 document.getElementById("szamlalo").value = test;
                 if (test > 0){
-                    kosarblock.style.transform = 'scale(1)';
+                    kosarblock.style.transform = 'scale(0.5)';
                 }
             }
         </script>
