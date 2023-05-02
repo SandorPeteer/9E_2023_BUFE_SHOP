@@ -1,18 +1,18 @@
 /* navbar - ért felelős css **/
-.navbar-dark .navbar-toggler-icon { color: rgb(82, 73, 73);
+.navbar-dark .navbar-toggler-icon { color: rgb(172, 0, 0);
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(82, 73, 73, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .nav-link {
-  color: #666;
+  color: rgb(172, 0, 0);
   display:inline-block;
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 .nav-link:after {
   display:block;
   content: '';
-  border-bottom: solid 3px #019fb6;  
+  border-bottom: solid 3px rgb(172, 0, 0);
   transform: scaleX(0);  
   transition: transform 250ms ease-in-out;
 }
@@ -24,18 +24,20 @@
 /** kártyákért felelő css**/
 .card {
   transition: all 0.2s ease-out;
-  box-shadow: 2px 4px 10px rgba(0, 130, 139, 0.911);
+  box-shadow: 2px 4px 10px rgb(0, 0, 0);
   cursor:pointer;
 }
 
 .card:hover {
-  box-shadow: 1px 2px 20px rgb(34, 0, 255);
+  box-shadow: 2px 4px 10px rgb(172, 0, 0);
 }
+
 
 h1 {
   text-align: center;
-  
 }
 .img-fluid{
   object-fit: cover;
+}
+body{background-image: url("https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/hatter.jpg");
 }
