@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="hu"> 
+<html lang="hu">
 
 <head>
 
@@ -29,27 +29,47 @@
             <a href="#" class="navbar-brand"></a><!--LOGO , Link ha kell a logóra "href"-et átálítva elérhető! -->
             
             <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <!-- Linkek navbarban -->
                 <!-- A classban az "active" részt át kell irni minden oldalnál! ezenkívül a classban szereplő "text-white" adja a szöveg színét -->
-                <a class="nav-item nav-link text-white active" href="index.html">Főoldal</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="#">Ételek</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="#">Italok</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="#">Nasik</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="Egyeb.html">Egyéb</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="#">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a class="nav-item nav-link text-white" data-bs-toggle="modal" data-bs-target="Regist" href="#">Regisztráció <!-- Ebben a sorban van a regisztráció és a bejelentkezési modal-->
+                </a>
+                <a class="nav-item nav-link text-white active" href="index.html">Főoldal</a> 
+                <a class="nav-item nav-link text-white" href="#">Ételek</a>
+                <a class="nav-item nav-link text-white" href="#">Italok</a> 
+                <a class="nav-item nav-link text-white" href="#">Nasik</a> 
+                <a class="nav-item nav-link text-white" href="#">Egyéb</a> 
+                <a class="nav-item nav-link text-white" href="cart.html">
+                    <li class="list-group-item d-flex justify-content-between align-items-center" style="margin-bottom:0px;">
                         Kosár 
                         <!-- Kosárban lévő tárgyak mennyiség jelzője -->
-                        <span class="badge badge-primary badge-pill bg-danger" id="szamlaloblock" style="transform: scale(0); border-radius: 20px; margin-top: 10px;"> 
-                                <output id="szamlalo"></output>
-                        </span> 
+                        <span class="badge badge-primary badge-pill bg-danger" id="ViewerProducts" style="transform: scale(0); border-radius: 20px;"> 
+                            <output id="ViewerPr"></output>
+                        </span>
                     </li>
-                </a> <!-- Link navbarban -->
+                </a>
             </div>
         </div>
     </nav>
     <!-- Navbar vége -->
-
-
+     <!-- Modal REGISZTRÁCIÓ -->
+     <div class="modal fade" id="Regist" tabindex="-1" aria-labelledby="RegistLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="t001Label">REGISZTRÁCIÓ</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Feltétek
+                    <!-- Ide kerülnek a feltétek, ez lehet egy lista is ezért kihagytam a helyet -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KOSAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- a fw-bolder adja a vastagságát a betünek, border-bottom az alsó szegélyt, majd a border-dark adja a szegély színét, a p-3 a belső margóját adja a szövegnek-->
     <hr><hr><hr>
     <h1 class="fw-bolder border-bottom border-dark p-3 text-primary">Ajánlataink:</h1> 
@@ -222,7 +242,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Vega szendvics</h5>
                                 <p class="card-text">Teljeskiőrlésű kenyérben vegetáriánus sajtal friss zöldségek</p>
-                                <p class="card-text"><small class="text-body-secondary">ÁR</small>
+                                <p class="card-text" ><small class="text-body-secondary">ÁR</small>
                                 </p>
                             </div>
                         </div>
@@ -278,7 +298,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="StorageHandlerAdd(this)" id="Item1">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -310,7 +330,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="StorageHandlerAdd(this)" id="Item2">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -342,7 +362,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="StorageHandlerAdd(this)" id="Item3">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -375,7 +395,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="StorageHandlerAdd(this)" id="Item4">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -407,7 +427,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="StorageHandlerAdd(this)" id="Item5">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -439,7 +459,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="StorageHandlerAdd(this)" id="Item6">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -472,7 +492,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="StorageHandlerAdd(this)" id="Item7">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -504,7 +524,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="StorageHandlerAdd(this)" id="Item8">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
@@ -529,20 +549,14 @@
                             <input type="checkbox" id="" name="" value="">
                             <label for="vehicle3">Majonéz</label>
                           </form>
-
-
-
-
-
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="StorageHandlerAdd(this)" id="Item9">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- Footer -->
     <!-- bg-dark ( sötét háttér ) text center ( középre helyezés ) text-white ( szöveg színe fehér )--> 
@@ -723,18 +737,7 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <!-- bootstrap invite scriptek vége -->
-        <script>
-            //Ez nem localstored, ez csak egy egyszerü css, ami anyit tesz hogy hogy fog kinézni az oldal müködésekor!
-            var kosarblock = document.getElementById("szamlaloblock")
-            var test = 0
-            function kosarba(){
-                test += 1
-                document.getElementById("szamlalo").value = test;
-                if (test > 0){
-                    kosarblock.style.transform = 'scale(0.5)';
-                }
-            }
-        </script>
+        <script src="Handlers.js"></script>
 </body>
 
 </html>
