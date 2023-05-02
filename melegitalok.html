@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="hu">
+<html lang="hu"> 
 
 <head>
 
@@ -14,43 +14,50 @@
     <link rel="stylesheet" href="css/stlye.css">
 </head>
 
-<body>
-    <!--Navbar-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-2">
+<body> 
+    <!-- Bootstrapre alakított navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-1"> <!-- NAVBAR -->
+        <!-- A bg-dark az a background(háttér) színét változtatja sötétté -->
+        <!-- A következő Button felel a rezponzivitásért! (ha kisseb a felbontás meg jelenik egy navbar toggle (kapcsoló))-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
+        <div>
+            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/1.png" style="padding: 20px;" alt="Logo" width="70px" >
+    
+            </div>
         <!-- A justify-content-center helyezi középre a dolgokat, Ha végére akarjuk helyezni, akkor "center" helyett endet irunk -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01"> <!-- id -ban kell szerepelni-e annak ami a button data-targetében van! -->
             
-            <a href="#" class="navbar-brand"></a><!--LOGO , Link ha kell a logóra "href"-et átálítva elérhető! -->
+            <a href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/logo.png" class="navbar-brand"></a><!--LOGO , Link ha kell a logóra "href"-et átálítva elérhető! -->
             
-            <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <div class="navbar-nav" style="padding: 10px 20px 10px 20px; margin: 30px 10px 25px 10px; float:initial">
                 <!-- A classban az "active" részt át kell irni minden oldalnál! ezenkívül a classban szereplő "text-white" adja a szöveg színét -->
-                <a class="nav-item nav-link text-white active" href="index.html">Főoldal</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="#">Egyéb</a> <!-- Link navbarban -->
+                <a class="nav-item nav-link text-white active" style="background-color: rgba(0, 0, 0, 0.33); border-radius:15px;">Főoldal</a> <!-- Link navbarban -->
+                <a class="nav-item nav-link text-white" href="Egyeb.html">Egyéb</a> <!-- Link navbarban -->
                 <a class="nav-item nav-link text-white" href="#">Nasik</a> <!-- Link navbarban -->
                 <a class="nav-item nav-link text-white" href="#">Italok</a> <!-- Link navbarban -->
                 <a class="nav-item nav-link text-white" href="#">Ételek</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="#">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Kosár 
-                        <!-- Kosárban lévő tárgyak mennyiség jelzője -->
-                        <span class="badge badge-primary badge-pill bg-danger" id="szamlaloblock" style="transform: scale(0); border-radius: 20px; margin-top: 10px;"> 
-                                <output id="szamlalo"></output>
-                        </span> 
-                    </li>
-                </a> <!-- Link navbarban -->
             </div>
         </div>
+        <div class="collapse navbar-collapse justify-content-center" style="margin-left: 30%;" >
+            <form class="d-flex w-50">
+                <div class="input-group">
+                    <input class="form-control border-end-0 border rounded-pill" type="search" placeholder="Kereső" id="search-input">
+                </div>
+            </form>
+        </div>
+        
     </nav>
+
     <!-- Navbar vége -->
 
 
     <!-- a fw-bolder adja a vastagságát a betünek, border-bottom az alsó szegélyt, majd a border-dark adja a szegély színét, a p-3 a belső margóját adja a szövegnek-->
     <hr><hr><hr>
-    <h1 class="fw-bolder border-bottom border-dark p-3 text-primary" style="text-align: center;" >Meleg Italok</h1> 
+    <h1 class="fw-bolder p-3" style="color: rgb(172, 0, 0);" >---{ Meleg Italok }---</h1> 
 
     <div class="container">
 
@@ -333,18 +340,18 @@
     <!--Modal VÉGE-->
 
 
-    <!-- Footer -->
+        <!-- Footer -->
     <!-- bg-dark ( sötét háttér ) text center ( középre helyezés ) text-white ( szöveg színe fehér )--> 
     <footer class="bg-dark text-center text-white">         
         <div class="container p-4">
             <!-- Kis icon felületi elérhetőség ( pl. facebook icon, twitter, insta, Google) -->
             <section class="mb-4">
                 <!-- Facebook elérhetőség -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/kandomiskolc" target="_blank" role="button">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/kandomiskolc" role="button">
                     <!-- ebben a sorban tudtok linket hozzá adni!-->
                     <i class="bi bi-facebook"> <!-- bi bi-... méretezéshez szükséges-->
                         <!-- Szükséges icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
                                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
@@ -353,7 +360,7 @@
                 </a>
 
                 <!-- Twitter elérhetőség -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCV_wwFqieO3pwjailCbCdtg" target="_blank" role="button">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCV_wwFqieO3pwjailCbCdtg" role="button">
                     <!-- ebben a sorban tudtok linket hozzá adni!-->
                     <i class="bi bi-youtube"> <!-- bi bi-... méretezéshez szükséges-->
                         <!-- Szükséges icon -->
@@ -406,7 +413,7 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="https://kkszki.hu/rolunk/bemutatkozas" target="_blank" class="text-white">kkszki.hu</a>
+                                <a href="https://kkszki.hu/rolunk/bemutatkozas" class="text-white">kkszki.hu</a>
                             </li>
                             <li>
                                 <a href="#!" class="text-white">OM azonosító: 203060/015</a>
@@ -427,16 +434,16 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="https://kkszki.hu/kepzeseink/technikum-szakkepzo" target="_blank" class="text-white">Technikumi oktatás</a>
+                                <a href="https://kkszki.hu/kepzeseink/technikum-szakkepzo" class="text-white">Technikumi oktatás</a>
                             </li>
                             <li>
-                                <a href="https://kkszki.hu/kepzeseink/felnott" target="_blank" class="text-white">Felnőtti szakmai oktatás</a>
+                                <a href="https://kkszki.hu/kepzeseink/felnott" class="text-white">Felnőtti szakmai oktatás</a>
                             </li>
                             <li>
-                                <a href="https://kkszki.hu/kepzeseink/szakmai-kepzeseink" target="_blank" class="text-white">Szakmai képzések</a>
+                                <a href="https://kkszki.hu/kepzeseink/szakmai-kepzeseink" class="text-white">Szakmai képzések</a>
                             </li>
                             <li>
-                                <a href="https://kkszki.hu/kepzeseink/egyeb-kepzesek" target="_blank" class="text-white">Egyéb Képzéseink</a>
+                                <a href="https://kkszki.hu/kepzeseink/egyeb-kepzesek" class="text-white">Egyéb Képzéseink</a>
                             </li>
                         </ul>
                     </div>
@@ -449,16 +456,16 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="https://kkszki.hu/tanuloinknak/linkgyujtemeny" target="_blank" class="text-white">Hasznos tudnivalók</a>
+                                <a href="https://kkszki.hu/tanuloinknak/linkgyujtemeny" class="text-white">Hasznos tudnivalók</a>
                             </li>
                             <li>
-                                <a href="https://kkszki.hu/tanuloinknak/esemenyek" target="_blank" class="text-white">Események</a>
+                                <a href="https://kkszki.hu/tanuloinknak/esemenyek" class="text-white">Események</a>
                             </li>
                             <li>
-                                <a href="https://kkszki.hu/tanuloinknak/tanev-rendje" target="_blank" class="text-white">Tanév-rendje</a>
+                                <a href="https://kkszki.hu/tanuloinknak/tanev-rendje" class="text-white">Tanév-rendje</a>
                             </li>
                             <li>
-                                <a href="https://kkszki.hu/tanuloinknak/egyeb-foglalkozasok" target="_blank" class="text-white">Egyéb foglalkozás</a>
+                                <a href="https://kkszki.hu/tanuloinknak/egyeb-foglalkozasok" class="text-white">Egyéb foglalkozás</a>
                             </li>
                         </ul>
                     </div>
@@ -471,16 +478,16 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="https://www.mavcsoport.hu/" target="_blank" class="text-white">Máv</a>
+                                <a href="https://www.mavcsoport.hu/" class="text-white">Máv</a>
                             </li>
                             <li>
-                                <a href="https://www.telekom.hu/lakossagi/karbantartas" target="_blank" class="text-white">Telekom</a>
+                                <a href="https://www.telekom.hu/lakossagi/karbantartas" class="text-white">Telekom</a>
                             </li>
                             <li>
-                                <a href="https://mikrotik.com/" target="_blank" class="text-white">Mikrotik</a>
+                                <a href="https://mikrotik.com/" class="text-white">Mikrotik</a>
                             </li>
                             <li>
-                                <a href="https://kormany.hu/kulturalis-es-innovacios-miniszterium" target="_blank" class="text-white">Magyar önkormányzat</a>
+                                <a href="https://kormany.hu/kulturalis-es-innovacios-miniszterium" class="text-white">Magyar önkormányzat</a>
                             </li>
                         </ul>
                     </div>
@@ -525,5 +532,4 @@
             }
         </script>
 </body>
-
 </html>
