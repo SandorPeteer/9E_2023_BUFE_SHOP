@@ -40,7 +40,7 @@ h1 {
   object-fit: cover;
 }
 body{ 
-  background-image: url(https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/hatter.jpg);
+  background-image: url("https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/hatter.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
