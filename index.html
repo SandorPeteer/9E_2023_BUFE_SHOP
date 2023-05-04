@@ -30,16 +30,43 @@
         </div>
         <!-- A justify-content-center helyezi középre a dolgokat, Ha végére akarjuk helyezni, akkor "center" helyett endet irunk -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01"> <!-- id -ban kell szerepelni-e annak ami a button data-targetében van! -->
-            
-            <a href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/logo.png" class="navbar-brand"></a><!--LOGO , Link ha kell a logóra "href"-et átálítva elérhető! -->
-            
+
             <div class="navbar-nav">
                 <!-- A classban az "active" részt át kell irni minden oldalnál! ezenkívül a classban szereplő "text-white" adja a szöveg színét -->
+
                 <a class="nav-item nav-link text-black active" style="background-color: rgb(255, 255, 255); border-radius:15px;">Főoldal</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="#">Ételek</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="#">Italok</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="#">Nasik</a> <!-- Link navbarban -->
-                <a class="nav-item nav-link text-white" href="Egyeb.html">Egyéb</a> <!-- Link navbarban -->
+
+                <div class="dropdown">
+                    <button class="nav-item nav-link text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Ételek
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: black; border: 1px solid white;">
+                      <a class="dropdown-item text-white" href="#">Meleg ételek</a>
+                      <a class="dropdown-item text-white" href="#">Hideg ételek</a>
+                    </div>
+                  </div>
+
+                  <div class="dropdown">
+                    <button class="nav-item nav-link text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Italok
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: black; border: 1px solid white;">
+                      <a class="dropdown-item text-white" href="#">Meleg italok</a>
+                      <a class="dropdown-item text-white" href="#">Hideg italok</a>
+                    </div>
+                  </div>
+
+                  <div class="dropdown">
+                    <button class="nav-item nav-link text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Nasik
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: black; border: 1px solid white;">
+                      <a class="dropdown-item text-white" href="#">Sós</a>
+                      <a class="dropdown-item text-white" href="#">Édes</a>
+                    </div>
+                  </div>
+                  
+                  <a class="nav-item nav-link text-white" href="Egyeb.html">Egyéb</a>
             </div>
         </div>
         <div class="collapse navbar-collapse justify-content-center" style="margin-left: 25%;" >
