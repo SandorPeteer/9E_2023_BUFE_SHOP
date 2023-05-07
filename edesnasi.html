@@ -16,7 +16,7 @@
 
 <body> 
     <!-- Bootstrapre alakított navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black p-1"> <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-1"> <!-- NAVBAR -->
         <!-- A bg-dark az a background(háttér) színét változtatja sötétté -->
         <!-- A következő Button felel a rezponzivitásért! (ha kisseb a felbontás meg jelenik egy navbar toggle (kapcsoló))-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -25,69 +25,35 @@
         </button>
         
         <div>
-            <a href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/index.html">
-            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/logo.png" style="padding: 20px;" alt="Logo" width="120px" title="Főoldal (2023 9E Büfé Logo)"></a>
-        </div>
+            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/1.png" style="padding: 20px;" alt="Logo" width="110px" >
+    
+            </div>
         <!-- A justify-content-center helyezi középre a dolgokat, Ha végére akarjuk helyezni, akkor "center" helyett endet irunk -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01"> <!-- id -ban kell szerepelni-e annak ami a button data-targetében van! -->
-
+            
+            <a href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/logo.png" class="navbar-brand"></a><!--LOGO , Link ha kell a logóra "href"-et átálítva elérhető! -->
+            
             <div class="navbar-nav">
                 <!-- A classban az "active" részt át kell irni minden oldalnál! ezenkívül a classban szereplő "text-white" adja a szöveg színét -->
-
-                <a class="nav-item nav-link text-black active" style="background-color: rgb(255, 255, 255); border-radius:15px;">Főoldal</a> <!-- Link navbarban -->
-
-                <div class="dropdown">
-                    <button class="nav-item nav-link text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Ételek
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: black; border: 1px solid white;">
-                      <a class="dropdown-item text-white" href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/melegetelek.html">Meleg ételek</a>
-                      <a class="dropdown-item text-white" href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/hidegetelek.html">Hideg ételek</a>
-                    </div>
-                  </div>
-
-                  <div class="dropdown">
-                    <button class="nav-item nav-link text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Italok
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: black; border: 1px solid white;">
-                      <a class="dropdown-item text-white" href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/melegitalok.html">Meleg italok</a>
-                      <a class="dropdown-item text-white" href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/hidegitalok.html">Hideg italok</a>
-                    </div>
-                  </div>
-
-                  <div class="dropdown">
-                    <button class="nav-item nav-link text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Nasik
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: black; border: 1px solid white;">
-                      <a class="dropdown-item text-white" href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/edesnasi.html">Édes nasik</a>
-                      <a class="dropdown-item text-white" href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/sosnasi.html">Sós nasik</a>
-                    </div>
-                  </div>
-
-                  <a class="nav-item nav-link text-white" href="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/egyeb.html">Egyéb</a>
-
+                <a class="nav-item nav-link text-white" href="index.html">Főoldal</a> <!-- Link navbarban -->
+                <a class="nav-item nav-link text-white" href="#">Ételek</a> <!-- Link navbarban -->
+                <a class="nav-item nav-link text-white" href="#">Italok</a> <!-- Link navbarban -->
+                <a class="nav-item nav-link text-white active" style="background-color: rgba(0, 0, 0, 0.33); border-radius:15px;">Nasik</a> <!-- Link navbarban -->
+                <a class="nav-item nav-link text-white" href="Egyeb.html">Egyéb</a> <!-- Link navbarban -->
             </div>
         </div>
-        <div class="collapse navbar-collapse justify-content-center" style="margin-left: 25%;" >
+        <div class="collapse navbar-collapse justify-content-center" style="margin-left: 30%;" >
             <form class="d-flex w-50">
                 <div class="input-group">
                     <input class="form-control border-end-0 border rounded-pill" type="search" placeholder="Kereső" id="search-input">
                 </div>
             </form>
         </div>
-        <div>
-            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/kosar2.png" style="padding: 20px;" alt="kosar" width="110px" title="Kosár">
-        </div>
-        <div>
-            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/user.jpg" style="padding: 20px;" alt="bejelentkezes" width="90px" title="Bejelentkezés">
-        </div>
+        
     </nav>
 
     <!-- Navbar vége -->
-    <br><br><br><br>
-    <!-- Változó képek -->
+
     <div class="container-fluid">
         <div class="row">
     
@@ -104,21 +70,21 @@
     
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/food.jpg" alt="Ételek" class="d-block img-fluid" style="height: 500px; width: 100%;">
-                  <div class="carousel-caption">
-                    <h3>Ételek</h3>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/drink.jpg" alt="Italok" class="d-block  img-fluid" style="height: 500px;  width: 100%;">
+                  <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/italok.png" alt="Italok" class="d-block img-fluid" style="height: 500px; width: 100%;">
                   <div class="carousel-caption">
                     <h3>Italok</h3>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/cake.png" alt="Édességek" class="d-block img-fluid" style="height: 500px;  width: 100%;">
+                  <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/ételek.png" alt="Ételek" class="d-block  img-fluid" style="height: 500px;  width: 100%;">
                   <div class="carousel-caption">
-                    <h3>Desszertek</h3>
+                    <h3>Ételek</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/desszertek.png" alt="Édességek" class="d-block img-fluid" style="height: 500px;  width: 100%;">
+                  <div class="carousel-caption">
+                    <h3>Édességek</h3>
                   </div>
                 </div>
               </div>
@@ -131,33 +97,29 @@
               </button>
             </div>
         </div>
-    <!-- Változó képek vége-->
 
-        <hr style="color:white">
-
+        <hr>
     <!-- a fw-bolder adja a vastagságát a betünek, border-bottom az alsó szegélyt, majd a border-dark adja a szegély színét, a p-3 a belső margóját adja a szövegnek-->
-    <h1 class="fw-bolder p-3" style="color: rgb(255, 255, 255);" >---{ !AKCIÓS Termékek! }---</h1> 
+    <h1 class="fw-bolder p-3" style="color: rgb(245, 0, 0);" >---{ Ajánlataink }---</h1> 
     <div class="container">
-
-        <hr style="color:white">
-
+        <hr><h2 class="edesnasi">Édes nasik</h2>
         <!-- 1. sor -->
         <div class="row">
 
             <!--ELSŐ TERMÉK-->
             <div class="col-sm-4">
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#termekek1">
+                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#milka">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/mogyi.png"
+                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/nasi/edes/csoki.jpg"
                                 class="img-fluid rounded-start h-100 w-100" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Mogyi <br> (sajtos, hagymás, bacon)</h5>
-                                <p class="card-text" style="color: red;">!Most akciósan csak 240Ft!
+                                <h5 class="card-title">Milka táblacsoki</h5>
+                                <p class="card-text">A legfinomabb tejcsokoládé egyenesen az Alpokból.
                                 </p>
-                                <p class="card-text"><small class="text-body-secondary"></small>
+                                <p class="card-text"><small class="text-body-secondary">ÁR: 500FT</small>
                                 </p>
                             </div>
                         </div>
@@ -167,39 +129,38 @@
 
             <!--MÁSODIK TERMÉK-->
             <div class="col-sm-4">
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#termekek2">
+                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#kinderbueno">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/fitnes.png"
+                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/nasi/edes/kinder bueno fehercsokis.jpg"
                                 class="img-fluid rounded-start h-100 w-100" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Fitness szelet <br> (banásnos, csokis)</h5>
-                                <p class="card-text" style="color: red;">!Most akciósan csak 100Ft!
+                                <h5 class="card-title">Fehércsokis Kinder Bueno</h5>
+                                <p class="card-text">Engedd, hogy kényeztessen!
                                 </p>
-                                <p class="card-text"><small class="text-body-secondary"></small>
+                                <p class="card-text"><small class="text-body-secondary">ÁR: 300FT</small>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!--HARMADIK TERMÉK-->
             <div class="col-sm-4">
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#termekek3">
+                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#kinderbueno2">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/fitnes2.png"
+                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/nasi/edes/kinder bueno.jpg"
                                 class="img-fluid rounded-start h-100 w-100" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Fitness szelet <br> (csokis)</h5>
-                                <p class="card-text" style="color: red;">!Most akciósan csak 100Ft!
+                                <h5 class="card-title">Kinder Bueno</h5>
+                                <p class="card-text">Engedd, hogy kényeztessen!
                                 </p>
-                                <p class="card-text"><small class="text-body-secondary"></small>
+                                <p class="card-text"><small class="text-body-secondary">ÁR: 300FT</small>
                                 </p>
                             </div>
                         </div>
@@ -210,23 +171,21 @@
         </div>
         <!-- 1. sor vége-->
 
-        <hr style="color:white">
         <!-- 2. sor -->
         <div class="row">
             <!--ELSŐ TERMÉK-->
             <div class="col-sm-4">
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#termekek4">
+                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#snickers">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/rolls.jpg"
+                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/nasi/edes/snickers.jpg"
                                 class="img-fluid rounded-start h-100 w-100" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Choco Rolls</h5>
-                                <p class="card-text" style="color: red;">!Most akciósan csak 250Ft!
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary"></small>
+                                <h5 class="card-title">Snickers</h5>
+                                <p class="card-text">Snickers! Megállni tilos!</p>
+                                <p class="card-text"><small class="text-body-secondary">ÁR: 350FT</small>
                                 </p>
                             </div>
                         </div>
@@ -235,18 +194,17 @@
             </div>
             <!--MÁSODIK TERMÉK-->
             <div class="col-sm-4">
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#termekek5">
+                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#twix">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/cherryhell.jpg"
+                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/nasi/edes/twix.jpg"
                                 class="img-fluid rounded-start h-100 w-100" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Cherry Hell <br> (250ml)</h5>
-                                <p class="card-text" style="color: red;">!Most akciósan csak 200Ft!
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary"></small>
+                                <h5 class="card-title">Twix</h5>
+                                <p class="card-text">Jobb vagy bal?</p>
+                                <p class="card-text"><small class="text-body-secondary">ÁR: 250FT</small>
                                 </p>
                             </div>
                         </div>
@@ -255,18 +213,17 @@
             </div>
             <!--HARMADIK TERMÉK-->
             <div class="col-sm-4">
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#termekek6">
+                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#rolls">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/watermelonhell.png"
+                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/nasi/edes/Viva-rolls-eper.jpg"
                                 class="img-fluid rounded-start h-100 w-100" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Dinnyés Hell <br> (250ml)</h5>
-                                <p class="card-text" style="color: red;">!Most akciósan csak 200Ft!
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary"></small>
+                                <h5 class="card-title">Epres Viva-Rolls</h5>
+                                <p class="card-text">Epres Viva-Rolls</p>
+                                <p class="card-text"><small class="text-body-secondary">ÁR: 400FT</small>
                                 </p>
                             </div>
                         </div>
@@ -275,234 +232,305 @@
             </div>
         </div>
         <!-- 2. sor vége-->
+<hr><h2 class="sosnasi">Sós nasik</h2>
 
-        <hr style="color:white">
-        <!-- 3. sor -->
-        <div class="row">
-            <!--ELSŐ TERMÉK-->
-            <div class="col-sm-4">
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#termekek7">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/pepsi.jpg"
-                                class="img-fluid rounded-start h-100 w-100" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Pepsi <br> (250ml)</h5>
-                                <p class="card-text" style="color: red;">!Most akciósan csak 210Ft!
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary"></small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--MÁSODIK TERMÉK-->
-            <div class="col-sm-4">
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#termekek8">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/xixocola.jpg"
-                                class="img-fluid rounded-start h-100 w-100" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">XIXO Cola <br> (250ml)</h5>
-                                <p class="card-text" style="color: red;">!Most akciósan csak 180Ft!
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary"></small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--HARMADIK TERMÉK-->
-            <div class="col-sm-4">
-                <div class="card mb-3" style="max-width: 540px;" data-bs-toggle="modal" data-bs-target="#termekek9">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/fooldal/xixocolaz.jpg"
-                                class="img-fluid rounded-start h-100 w-100" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">XIXO Cola Zero <br> (250ml)</h5>
-                                <p class="card-text" style="color: red;">!Most akciósan csak 180Ft!
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary"></small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!-- 3. sor vége-->
-        <hr style="color:white">
         
 
-<!--Rólunk-->
-<h1 class="fw-bolder p-3" style="color: rgb(255, 255, 255);" >---{ Rólunk }---</h1>
-<hr style="color:white">
-
-<!--Rólunk vége-->
-
-
-
         <!-- Modal -->
-        <div class="modal fade" id="termekek1" tabindex="-1" aria-labelledby="termekek1Label" aria-hidden="true">
+        <div class="modal fade" id="szendvics1" tabindex="-1" aria-labelledby="szendvics1Label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="t001Label">Mogyi</h1>
+                        <h1 class="modal-title fs-5" id="t001Label">Csirkés szendvics</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <!-- Ide kerülnek a feltétek, ez lehet egy lista is ezért kihagytam a helyet -->
-                        Választék:
+                        Feltétek: 
                         <form>
                             <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle1">Sajtos</label><br>
+                            <label for="vehicle1">Kecsap</label><br>
                             <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle2">Hagymás</label><br>
+                            <label for="vehicle2">Mustár</label><br>
                             <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle3">Bacon</label>
+                            <label for="vehicle3">Majonéz</label>
                           </form>
+
+
+
+
+
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()" style="background-color: rgb(172, 0, 0); border-color: black;">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="termekek2" tabindex="-1" aria-labelledby="termekek2Label" aria-hidden="true">
+        <div class="modal fade" id="szendvics2" tabindex="-1" aria-labelledby="szendvics2Label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="t001Label">Fitness szelet (banános, csokis)</h1>
+                        <h1 class="modal-title fs-5" id="t001Label">Bőségszendvics</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                        <!-- Ide kerülnek a feltétek -->
+                        Feltétek:
+                        <form>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle1">Kecsap</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle2">Mustár</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle3">Majonéz</label>
+                          </form>
+
+
+
+
+
+                    </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()" style="background-color: rgb(172, 0, 0); border-color: black;">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="termekek3" tabindex="-1" aria-labelledby="termekek3Label" aria-hidden="true">
+        <div class="modal fade" id="szendvics3" tabindex="-1" aria-labelledby="szendvics3Label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="t001Label">Fitness szelet (csokis)</h1>
+                        <h1 class="modal-title fs-5" id="t001Label">Parti szendvicstál</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                        <!-- Ide kerülnek a feltétek -->
+                        Feltétek:
+                        <form>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle1">Kecsap</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle2">Mustár</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle3">Majonéz</label>
+                          </form>
+
+
+
+
+
+                    </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()" style="background-color: rgb(172, 0, 0); border-color: black;">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="termekek4" tabindex="-1" aria-labelledby="termekek4Label" aria-hidden="true">
+        <div class="modal fade" id="szendvics4" tabindex="-1" aria-labelledby="szendvics4Label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="t001Label">Choco Rolls</h1>
+                        <h1 class="modal-title fs-5" id="t001Label">Sajtos szendvics</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                        <!-- Ide kerülnek a feltétek -->
+                        Feltétek:
+                        <form>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle1">Kecsap</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle2">Mustár</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle3">Majonéz</label>
+                          </form>
+
+
+
+
+
+
+                    </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()" style="background-color: rgb(172, 0, 0); border-color: black;">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="termekek5" tabindex="-1" aria-labelledby="termekek5Label" aria-hidden="true">
+        <div class="modal fade" id="szendvics5" tabindex="-1" aria-labelledby="szendvics5Label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="t001Label">Cherry Hell (250ml)</h1>
+                        <h1 class="modal-title fs-5" id="t001Label">Snkás szendvics</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                        <!-- Ide kerülnek a feltétek -->
+                        Feltétek:
+                        <form>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle1">Kecsap</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle2">Mustár</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle3">Majonéz</label>
+                          </form>
+
+
+
+
+
+                    </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()" style="background-color: rgb(172, 0, 0); border-color: black;">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="termekek6" tabindex="-1" aria-labelledby="termekek6Label" aria-hidden="true">
+        <div class="modal fade" id="szendvics6" tabindex="-1" aria-labelledby="szendvics6Label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="t001Label">Dinnyés Hell (250ml)</h1>
+                        <h1 class="modal-title fs-5" id="t001Label">Vegetáriánus szendvics</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                        <!-- Ide kerülnek a feltétek -->
+                        Feltétek:
+                        <form>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle1">Kecsap</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle2">Mustár</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle3">Majonéz</label>
+                          </form>
+
+
+
+
+
+                    </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()" style="background-color: rgb(172, 0, 0); border-color: black;">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="termekek7" tabindex="-1" aria-labelledby="termekek7Label" aria-hidden="true">
+        <div class="modal fade" id="szendvics7" tabindex="-1" aria-labelledby="szendvics7Label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="t001Label">Pepsi (250ml)</h1>
+                        <h1 class="modal-title fs-5" id="t001Label">Vegetáriánus szendvics</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                        <!-- Ide kerülnek a feltétek -->
+                        Feltétek:
+                        <form>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle1">Kecsap</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle2">Mustár</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle3">Majonéz</label>
+                          </form>
+
+
+
+
+
+
+                    </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()" style="background-color: rgb(172, 0, 0); border-color: black;">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
         </div>
 
-         <!-- Modal -->
-         <div class="modal fade" id="termekek8" tabindex="-1" aria-labelledby="termekek8Label" aria-hidden="true">
+        <!-- Modal -->
+        <div class="modal fade" id="szendvics8" tabindex="-1" aria-labelledby="szendvics8Label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="t001Label">XIXO Cola (250ml)</h1>
+                        <h1 class="modal-title fs-5" id="t001Label">Vegetáriánus szendvics</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                        <!-- Ide kerülnek a feltétek -->
+                        Feltétek:
+                        <form>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle1">Kecsap</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle2">Mustár</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle3">Majonéz</label>
+                          </form>
+
+
+
+
+
+                    </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()" style="background-color: rgb(172, 0, 0); border-color: black;">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
         </div>
 
-         <!-- Modal -->
-         <div class="modal fade" id="termekek9" tabindex="-1" aria-labelledby="termekek9Label" aria-hidden="true">
+        <!-- Modal -->
+        <div class="modal fade" id="szendvics9" tabindex="-1" aria-labelledby="szendvics9Label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="t001Label">XIXO Cola Zero (250ml)</h1>
+                        <h1 class="modal-title fs-5" id="t001Label">Vegetáriánus szendvics</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                        <!-- Ide kerülnek a feltétek -->
+                        Feltétek:
+                        <form>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle1">Kecsap</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle2">Mustár</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="vehicle3">Majonéz</label>
+                          </form>
+
+
+
+
+
+                    </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()" style="background-color: rgb(172, 0, 0); border-color: black;">KOSÁRBA</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- Footer -->
     <!-- bg-dark ( sötét háttér ) text center ( középre helyezés ) text-white ( szöveg színe fehér )--> 
-    <footer class="bg-black text-center text-white">  
+    <footer class="bg-dark text-center text-white"><center>   
         <div class="container p-4">
             <!-- Kis icon felületi elérhetőség ( pl. facebook icon, twitter, insta, Google) -->
             <section class="mb-4">
@@ -661,7 +689,7 @@
             © 2023 Copyright
             <a class="text-white" href="#"></a>
         </div>
-    </footer>
+    </center></footer>
     <!-- Footer vége-->
 
 
