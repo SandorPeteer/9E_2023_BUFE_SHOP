@@ -1,4 +1,4 @@
-//localStorage
+//localStorage TERMÉKEK
 const products = {}
 //termékek
 var listitems = [0,0,0,0,0,0,0,0,0] // A lista tömb számlálója
