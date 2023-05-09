@@ -1,9 +1,14 @@
-//navbar betöltése
 window.onload = function(){
-    var navbarHTML = localStorage.getItem('element')
+    //navbar betöltése
+    var navbarHTML = localStorage.getItem('navbar')
     document.getElementById('navbarload').innerHTML = navbarHTML
-    .replace(/href="htmls\/egyeb.html"/g, 'href="egyeb.html"')
-    .replace(/href="index.html"/g, 'href="index.html"')
+    //.replace(/href="htmls\/egyeb.html"/g, 'href="egyeb.html"')
+    //.replace(/href="index.html"/g, 'href="index.html"')
+
+
+    //footer betöltése
+    var footerHTML = localStorage.getItem('footer')
+    document.getElementById('footerload').innerHTML = footerHTML
 }
 
 //function replaceHandler(currentPage){
