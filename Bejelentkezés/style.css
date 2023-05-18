@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url(https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/hatter.jpg);
+    background-image: url("https://sandorpeteer.github.io/9E_2023_BUFE_SHOP/img/hatter.jpg");
   }
   
   .container {
